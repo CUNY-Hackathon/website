@@ -1,16 +1,24 @@
+"use client";
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <nav className="flex items-center h-[85px] bg-slate-800">
+    <nav className="flex items-center h-[85px]">
       <div className="grow flex justify-center">
-        <Image src="/200.webp" alt="logo" width={75} height={75} />
+        <Image
+          className="cursor-pointer"
+          src="/hackathon_logo.png"
+          alt="logo"
+          width={150}
+          height={150}
+          onClick={() => document.body.scrollTo(0, 0)}
+        />
       </div>
       <div className="grow-[18] flex justify-center items-center gap-10">
-        <li className="list-none text-lg">
-          <a href="#">about</a>
+        <li className="list-none text-xl">
+          <a href="#">About</a>
         </li>
-        <li className="list-none text-lg">
+        <li className="list-none text-xl">
           <a href="#">FAQs</a>
         </li>
       </div>

@@ -73,37 +73,42 @@ export default function Main() {
         width={1750}
         height={1750}
       />
-      <h2>Feb 16-18 | 32 Avenue of the Americas</h2>
+      <h2 className="text-2xl mb-16">
+        Feb 16-18, 2024 | 32 Avenue of the Americas
+      </h2>
       <div className="flex gap-8">
         <div className="flex flex-col items-center">
           <div className="flex gap-2">
             <TrainSymbol color="green">{time.day1}</TrainSymbol>
             <TrainSymbol color="green">{time.day2}</TrainSymbol>
           </div>
-          DAYS
+          <p className="text-xl mt-4">DAYS</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex gap-2">
             <TrainSymbol color="red">{time.hour1}</TrainSymbol>
             <TrainSymbol color="red">{time.hour2}</TrainSymbol>
           </div>
-          HOURS
+          <p className="text-xl mt-4">HOURS</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex gap-2">
             <TrainSymbol color="yellow">{time.minute1}</TrainSymbol>
             <TrainSymbol color="yellow">{time.minute2}</TrainSymbol>
           </div>
-          MINUTES
+          <p className="text-xl mt-4">MINUTES</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex gap-2">
             <TrainSymbol color="orange">{time.second1}</TrainSymbol>
             <TrainSymbol color="orange">{time.second2}</TrainSymbol>
           </div>
-          SECONDS
+          <p className="text-xl mt-4">SECONDS</p>
         </div>
       </div>
+      <button className="animated-button p-6 text-lg font-bold rounded-full mt-16">
+        Register Now
+      </button>
     </div>
   );
 }
