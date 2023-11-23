@@ -68,7 +68,7 @@ export default function Main() {
   return (
     <div className="flex justify-center items-center flex-col">
       <Image
-        src="/hackathon_logo.png"
+        src="/hackathon_logo_2.png"
         alt="hackathon"
         width={1750}
         height={1750}
@@ -106,7 +106,7 @@ export default function Main() {
           <p className="text-xl mt-4">SECONDS</p>
         </div>
       </div>
-      <button className="animated-button p-6 text-lg font-bold rounded-full mt-16">
+      <button className="animated-button p-6 text-2xl font-bold rounded-full mt-16">
         Register Now
       </button>
     </div>
