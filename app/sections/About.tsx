@@ -6,8 +6,9 @@ const bungee = Bungee_Shade({ weight: "400", subsets: ["latin"] });
 export default function About() {
   return (
     <div
+      id="about"
       className={
-        "border-dotted border-yellow-300 border-8 bg-black text-white p-8 min-h-[500px]"
+        "border-dotted border-yellow-300 border-[10px] bg-black text-white p-8 min-h-[500px]"
       }
     >
       <h1 className={"text-5xl mb-10 " + bungee.className}>About HackCUNY</h1>

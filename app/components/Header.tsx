@@ -3,6 +3,13 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Header() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     window.onscroll = function () {
       makeSticky();
@@ -33,15 +40,15 @@ export default function Header() {
           alt="logo"
           width={150}
           height={150}
-          onClick={() => document.body.scrollTo(0, 0)}
+          onClick={scrollToTop}
         />
       </div>
       <div className="grow-[18] flex justify-center items-center gap-10">
         <li className="list-none text-xl text-white">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="list-none text-xl text-white">
-          <a href="#">FAQs</a>
+          <a href="#faqs">FAQs</a>
         </li>
       </div>
       <div className="grow bg-pink-300"></div>
