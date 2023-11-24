@@ -1,11 +1,12 @@
 import { Header } from "@/app/components";
-import { Main } from "@/app/sections";
+import { Main, About } from "@/app/sections";
 
 export default function Home() {
   return (
-    <main className="h-full">
+    <main className="h-full ">
       <Header />
       <Main />
+      <About />
     </main>
   );
 }

@@ -1,3 +1,4 @@
 import Main from "./Main";
+import About from "./About";
 
-export { Main };
+export { Main, About };

@@ -66,7 +66,7 @@ export default function Main() {
   }, [time, first_day]);
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col main_background min-h-screen">
       <Image
         src="/hackathon_logo_2.png"
         alt="hackathon"
