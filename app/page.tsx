@@ -1,5 +1,4 @@
-import { Header } from "@/app/components";
-import { Main, About } from "@/app/sections";
+import { Header, Main, About, Footer } from "@/app/sections";
 
 export default function Home() {
   return (
@@ -7,6 +6,7 @@ export default function Home() {
       <Header />
       <Main />
       <About />
+      <Footer />
     </main>
   );
 }
