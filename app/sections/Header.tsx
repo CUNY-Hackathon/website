@@ -1,8 +1,14 @@
 "use client";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import ScreenWidthContext from "../utils/ScreenWidthContext";
+import HamburgerContext from "../utils/HamburgerContext";
+import { Menu } from "lucide-react";
 
 export default function Header() {
+  const screenWidth = useContext(ScreenWidthContext);
+  const setHam = useContext(HamburgerContext);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -15,7 +21,7 @@ export default function Header() {
       makeSticky();
     };
     var header = document.getElementById("myHeader")!;
-    var sticky = header.offsetTop + 150;
+    var sticky = header.offsetTop + (window.innerWidth <= 1200 ? 80 : 150);
 
     function makeSticky() {
       if (window.scrollY > sticky) {
@@ -30,12 +36,12 @@ export default function Header() {
 
   return (
     <nav
-      className="flex items-center h-[85px] absolute top-0 w-full transition-all ease-out duration-300 bg-gradient-to-b from-black to-transparent"
+      className="flex items-center h-[55px] lg:h-[85px] absolute top-0 w-full transition-all ease-out duration-300 bg-gradient-to-b from-black to-transparent"
       id="myHeader"
     >
       <div className="grow flex justify-center">
         <Image
-          className="cursor-pointer"
+          className="cursor-pointer phone:w-[100px] sm:w-[125px] 2xl:w-[175px]"
           src="/hackathon_logo.png"
           alt="logo"
           width={150}
@@ -43,15 +49,25 @@ export default function Header() {
           onClick={scrollToTop}
         />
       </div>
-      <div className="grow-[18] flex justify-center items-center gap-10">
-        <li className="list-none text-xl text-white">
-          <a href="#about">About</a>
-        </li>
-        <li className="list-none text-xl text-white">
-          <a href="#faqs">FAQs</a>
-        </li>
-      </div>
-      <div className="grow bg-pink-300"></div>
+      {screenWidth < 450 ? (
+        <div className="grow-[18] flex justify-end items-start">
+          <div className="cursor-pointer me-4 rounded-full bg-[#003796] p-1">
+            <Menu color="white" size={32} onClick={() => setHam(true)} />
+          </div>
+        </div>
+      ) : (
+        <>
+          <div className="grow-[18] flex justify-center items-center gap-10">
+            <li className="list-none phone:text-sm sm:text-lg xl:text-xl text-white">
+              <a href="#about">About</a>
+            </li>
+            <li className="list-none phone:text-sm sm:text-lg xl:text-xl text-white">
+              <a href="#faqs">FAQs</a>
+            </li>
+          </div>
+          <div className="grow"></div>
+        </>
+      )}
     </nav>
   );
 }

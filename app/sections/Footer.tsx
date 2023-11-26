@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#003796] text-white p-4 text-lg">
+    <footer className="bg-[#003796] text-white p-4 text-sm lg:text-md 2xl:text-lg">
       <p>Have any questions or business inquiries?</p>
       <p>
         Email us at{" "}
