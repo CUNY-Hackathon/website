@@ -6,7 +6,9 @@ import HamburgerContext from "@/app/utils/HamburgerContext";
 import { X } from "lucide-react";
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
   const [ham, setHam] = useState(false);
 
   useEffect(() => {
