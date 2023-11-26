@@ -61,9 +61,9 @@ export default function Header() {
             <li className="list-none phone:text-sm sm:text-lg xl:text-xl text-white">
               <a href="#about">About</a>
             </li>
-            <li className="list-none phone:text-sm sm:text-lg xl:text-xl text-white">
+            {/* <li className="list-none phone:text-sm sm:text-lg xl:text-xl text-white">
               <a href="#faqs">FAQs</a>
-            </li>
+            </li> */}
           </div>
           <div className="grow"></div>
         </>

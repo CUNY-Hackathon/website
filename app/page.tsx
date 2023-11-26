@@ -49,11 +49,11 @@ export default function Home() {
                 About
               </a>
             </div>
-            <div className="mt-6 flex justify-center">
+            {/* <div className="mt-6 flex justify-center">
               <a className="text-xl" href="#faqs" onClick={() => setHam(false)}>
                 FAQs
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <HamburgerContext.Provider value={setHam}>
