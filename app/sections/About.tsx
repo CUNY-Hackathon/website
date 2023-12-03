@@ -4,6 +4,11 @@ import { Bungee_Shade } from "next/font/google";
 import Image from "next/image";
 import ScreenWidthContext from "@/app/utils/ScreenWidthContext";
 
+
+
+
+
+
 const bungee = Bungee_Shade({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
