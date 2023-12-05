@@ -115,9 +115,13 @@ export default function Main() {
           </p>
         </div>
       </div>
-      <button className="animated-button p-2 lg:p-4 2xl:p-6 text-sm lg:text-lg 2xl:text-2xl 3xl:text-2xl font-bold rounded-full phone:mt-8 sm:mt-4 lg:mt-4 xl:mt-6 3xl:mt-16">
+      <a
+        href="https://forms.gle/xRNK9KfTN7DBEDfC9"
+        target="_blank"
+        className="cursor-pointer animated-button p-2 lg:p-4 2xl:p-6 text-sm lg:text-lg 2xl:text-2xl 3xl:text-2xl font-bold rounded-full phone:mt-8 sm:mt-4 lg:mt-4 xl:mt-6 3xl:mt-16"
+      >
         Register Now
-      </button>
+      </a>
     </div>
   );
 }

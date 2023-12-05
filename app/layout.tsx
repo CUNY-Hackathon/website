@@ -7,6 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "HackCUNY 2024",
   description: "hackathon for CUNY students by CUNY students",
+  icons: ["/hackathon_logo.png"],
+  openGraph: {
+    title: "HackCUNY 2024",
+    description: "hackathon for CUNY students by CUNY students",
+    images: ["/hackathon_logo.png"],
+  },
 };
 
 export default function RootLayout({
