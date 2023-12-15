@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 import { useContext, useEffect } from "react";
 import ScreenWidthContext from "../utils/ScreenWidthContext";
 import HamburgerContext from "../utils/HamburgerContext";
@@ -40,7 +40,7 @@ export default function Header() {
       id="myHeader"
     >
       <div className="grow flex justify-center">
-        <Image
+        <img
           className="cursor-pointer phone:w-[100px] sm:w-[125px] 2xl:w-[175px]"
           src="/hackathon_logo.png"
           alt="logo"

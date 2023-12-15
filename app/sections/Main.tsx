@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState, useMemo } from "react";
-import Image from "next/image";
 import { TrainSymbol } from "@/app/components";
 
 interface HackTime {
@@ -67,7 +67,7 @@ export default function Main() {
 
   return (
     <div className="flex justify-center items-center flex-col main_background min-h-screen">
-      <Image
+      <img
         src="/hackathon_logo_2.png"
         alt="hackathon"
         width={1750}

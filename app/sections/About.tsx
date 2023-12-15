@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useContext } from "react";
 import { Bungee_Shade } from "next/font/google";
-import Image from "next/image";
 import ScreenWidthContext from "@/app/utils/ScreenWidthContext";
 
 const bungee = Bungee_Shade({ weight: "400", subsets: ["latin"] });
@@ -43,7 +43,7 @@ export default function About() {
           change through technology."
             : ""}
         </p>
-        <Image
+        <img
           src="/hackathon_logo.png"
           width={600}
           height={600}
