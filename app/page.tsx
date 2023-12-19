@@ -61,6 +61,7 @@ export default function Home() {
         <HamburgerContext.Provider value={setHam}>
           <Header />
         </HamburgerContext.Provider>
+
         <Main />
         <About />
         <Footer />

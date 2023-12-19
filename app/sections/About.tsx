@@ -25,7 +25,7 @@ export default function About() {
         About HackCUNY
       </h1>
       <div className="flex">
-        <p className="text-sm lg:text-md 2xl:text-xl 2xl:w-[50%] phone:leading-5 sm:leading-6 2xl:leading-8">
+        <p className="text-sm lg:text-md 2xl:text-xl 2xl:w-[50%] phone:leading-5 sm:leading-6 2xl:leading-8 flex-grow">
           Welcome to HackCUNY, an annual hackathon exclusively designed for the
           vibrant and diverse student body of the City University of New York
           (CUNY). Our event is more than just a competition; it&apos;s a
@@ -43,13 +43,23 @@ export default function About() {
           change through technology."
             : ""}
         </p>
-        <img
+        <div className="flex flex-col items-center gap-8 p-4 flex-grow">
+          <h2 className="hidden lg:block text-xl font-bold">
+            Join the discord!
+          </h2>
+          <iframe
+            src="https://discord.com/widget?id=1167951342665478194&theme=dark"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+            className="hidden lg:block w-[200px] h-[300px] lg:w-[380px] lg:h-[480px] 2xl:w-[530px] 2xl:h-[600px] self-center"
+          ></iframe>
+        </div>
+
+        {/* <img
           src="/hackathon_logo.png"
           width={600}
           height={600}
           alt="logo"
-          className="2xl:ms-[10%] hidden lg:block w-[300px] h-[100px] lg:w-[420px] lg:h-[180px] 2xl:w-[620px] 2xl:h-[300px] self-center"
-        />
+        /> */}
       </div>
     </div>
   );
