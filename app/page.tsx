@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Header, Main, About, Footer } from "@/app/sections";
 import ScreenWidthContext from "@/app/utils/ScreenWidthContext";
 import HamburgerContext from "@/app/utils/HamburgerContext";
+import Sponsors from "./sections/Sponsors";
 import { X } from "lucide-react";
 
 export default function Home() {
@@ -64,6 +65,7 @@ export default function Home() {
 
         <Main />
         <About />
+        <Sponsors />
         <Footer />
       </ScreenWidthContext.Provider>
     </main>
