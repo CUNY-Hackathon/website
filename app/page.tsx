@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Header, Main, About, Footer } from "@/app/sections";
+import { Header, Main, About, Footer, Faq } from "@/app/sections";
 import ScreenWidthContext from "@/app/utils/ScreenWidthContext";
 import HamburgerContext from "@/app/utils/HamburgerContext";
 import Sponsors from "./sections/Sponsors";
@@ -66,6 +66,7 @@ export default function Home() {
         <Main />
         <About />
         <Sponsors />
+        <Faq />
         <Footer />
       </ScreenWidthContext.Provider>
     </main>
