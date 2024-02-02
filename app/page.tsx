@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Header, Main, About, Footer, Faq } from "@/app/sections";
+import { Header, Main, About, Footer, Schedule, Faq } from "@/app/sections";
 import ScreenWidthContext from "@/app/utils/ScreenWidthContext";
 import HamburgerContext from "@/app/utils/HamburgerContext";
 import Sponsors from "./sections/Sponsors";
@@ -52,6 +52,24 @@ export default function Home() {
                 About
               </a>
             </div>
+            <div className="mt-6 flex justify-center">
+              <a
+                className="text-xl"
+                href="#schedule"
+                onClick={() => setHam(false)}
+              >
+                Schedule
+              </a>
+            </div>
+            <div className="mt-6 flex justify-center">
+              <a
+                className="text-xl"
+                href="#sponsors"
+                onClick={() => setHam(false)}
+              >
+                Sponsors
+              </a>
+            </div>
             {/* <div className="mt-6 flex justify-center">
               <a className="text-xl" href="#faqs" onClick={() => setHam(false)}>
                 FAQs
@@ -65,7 +83,8 @@ export default function Home() {
 
         <Main />
         <About />
-        <Faq />
+        {/* <Faq /> */}
+        <Schedule />
         <Sponsors />
         <Footer />
       </ScreenWidthContext.Provider>
