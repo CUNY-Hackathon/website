@@ -65,8 +65,8 @@ export default function Home() {
 
         <Main />
         <About />
-        <Sponsors />
         <Faq />
+        <Sponsors />
         <Footer />
       </ScreenWidthContext.Provider>
     </main>

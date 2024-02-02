@@ -68,11 +68,9 @@ html {
 }
 #faq{
   position: relative;
-  font-family: "dcll";
 }
 #faq::before {
   content: "";
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;

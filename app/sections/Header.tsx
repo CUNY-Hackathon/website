@@ -65,7 +65,6 @@ export default function Header() {
               <a href="#faqs">FAQs</a>
             </li> */}
           </div>
-          <div className="grow"></div>
         </>
       )}
     </nav>

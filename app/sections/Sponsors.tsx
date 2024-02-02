@@ -6,7 +6,7 @@ const Fredericka = Fredericka_the_Great({ weight: "400", subsets: ["latin"] })
 export default function Sponsors(){
     return (
         <div>
-            <h1 className={"text-4xl font-bold text-center bg-black text-white p-4 font-serif " + Fredericka.className}>Sponsors</h1>
+            <h1 className={"text-6xl font-bold text-center bg-black text-[#233f95] p-4 font-serif sponsorsHeader " + Fredericka.className}>Sponsors</h1>
             <div className="flex flex-row flex-wrap justify-around bg-black content-center align-center p-8 gap-8">
                     
                     <span>
