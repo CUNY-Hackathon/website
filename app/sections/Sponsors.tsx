@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Head from "next/head";
 import { Fredericka_the_Great } from "next/font/google";
 
 const Fredericka = Fredericka_the_Great({ weight: "400", subsets: ["latin"] });
@@ -21,11 +19,9 @@ export default function Sponsors() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               src="/cedarLogo.png"
               alt="Cedar"
-              width={200}
-              height={200}
               className="object-fill w-[120px] sm:w-[200px]"
             />
           </a>
@@ -37,11 +33,9 @@ export default function Sponsors() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               src="/johnJayLogo.jpg"
               alt="CUNY Logo"
-              width={200}
-              height={200}
               className="object-fill w-[120px] sm:w-[200px]"
             />
           </a>
@@ -53,11 +47,9 @@ export default function Sponsors() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               src="/ccnyLogo.png"
               alt="City College of New York Logo"
-              width={200}
-              height={200}
               className="object-fill w-[120px] sm:w-[200px]"
             />
           </a>

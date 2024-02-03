@@ -49,23 +49,23 @@ export default function Schedule() {
                 <path
                   d="M3 2.5V9.5C3 10.6 3.9 11.5 5 11.5H9C9.53043 11.5 10.0391 11.2893 10.4142 10.9142C10.7893 10.5391 11 10.0304 11 9.5V2.5"
                   stroke="#FFE8C7"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M7 2.5V22.5"
                   stroke="#FFE8C7"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M21 15.5V2.5C19.6739 2.5 18.4021 3.02678 17.4645 3.96447C16.5268 4.90215 16 6.17392 16 7.5V13.5C16 14.6 16.9 15.5 18 15.5H21ZM21 15.5V22.5"
                   stroke="#FFE8C7"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <p className="text-xs sm:text-lg">Lunch</p>
@@ -86,7 +86,7 @@ export default function Schedule() {
           <div className="border-b-[#233f95] border-b-2 sm:mt-2"></div>
           <div className="mt-3 sm:mt-6 text-[11px] sm:text-xs">
             12:00 PM - 8:00 PM
-            <p className="sm:float-right">Cedar HQ</p>
+            <p className="sm:float-right">Online</p>
             <p className="text-xs sm:text-lg">Workshops Commence</p>
           </div>
         </div>
