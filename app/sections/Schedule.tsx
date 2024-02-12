@@ -33,7 +33,7 @@ export default function Schedule() {
           <div className="mt-3 sm:mt-6 text-[11px] sm:text-xs">
             1:30 PM
             <p className="sm:float-right">Cedar HQ</p>
-            <p className="text-xs sm:text-lg">Check-In commences</p>
+            <p className="text-xs sm:text-lg">Hacking Begins</p>
           </div>
           <div className="mt-3 sm:mt-6 text-[11px] sm:text-xs">
             1:45 PM - 2:45 PM
