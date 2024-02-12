@@ -40,20 +40,6 @@ export default function Sponsors() {
             />
           </a>
         </span>
-
-        <span>
-          <a
-            href="https://www.ccny.cuny.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/ccnyLogo.png"
-              alt="City College of New York Logo"
-              className="object-fill w-[120px] sm:w-[200px]"
-            />
-          </a>
-        </span>
       </div>
     </div>
   );
